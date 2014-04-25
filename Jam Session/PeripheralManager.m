@@ -30,7 +30,7 @@
     return myPeripheralManager;
 }
 
--(void) setupService
+-(void) startBroadcast
 {
     
 }
@@ -41,13 +41,9 @@
 
 -(void) peripheralManagerDidUpdateState:(CBPeripheralManager *) peripheral
 {
-    switch (peripheral.state) {
-        case CBPeripheralManagerStatePoweredOn:
-            [self setupService];
-            break;
-            
-        default:
-            break;
+    //TO-DO handle different states
+    if (peripheral.state != CBPeripheralManagerStatePoweredOn) {
+        return;
     }
 }
 

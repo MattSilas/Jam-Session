@@ -10,4 +10,6 @@
 
 @interface PeripheralManager : NSObject <CBPeripheralManagerDelegate>
 
+-(void) startBroadcast;
+
 @end

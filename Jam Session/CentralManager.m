@@ -38,6 +38,7 @@
 
 -(void) centralManagerDidUpdateState:(CBCentralManager *)central
 {
+    //TO-DO handle different states
     if (central.state != CBCentralManagerStatePoweredOn)
     {
         return;

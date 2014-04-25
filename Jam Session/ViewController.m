@@ -25,15 +25,13 @@
     [super viewDidLoad];
 	
     CGRect frame = broadcastReceiveControl.frame;
+    //TO-DO customize the UISegmentedControl
     [broadcastReceiveControl setFrame:CGRectMake(frame.origin.x, frame.origin.y, frame.size.width, 800) ];
-    
-   
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 
@@ -48,7 +46,8 @@
     }
     else
     {
-        
+        PeripheralManager *peripheralManager = [PeripheralManager init];
+        [peripheralManager startBroadcast];
     }
 }
 
