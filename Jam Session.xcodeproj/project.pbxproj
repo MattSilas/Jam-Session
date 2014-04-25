@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C4A4DC75190AE85F0082771D /* CentralManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C4A4DC74190AE85F0082771D /* CentralManager.m */; };
+		C4A4DC78190AE87C0082771D /* PeripheralManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C4A4DC77190AE87C0082771D /* PeripheralManager.m */; };
 		C4DD21001903443D005F43BB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4DD20FF1903443D005F43BB /* Foundation.framework */; };
 		C4DD21021903443D005F43BB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4DD21011903443D005F43BB /* CoreGraphics.framework */; };
 		C4DD21041903443D005F43BB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4DD21031903443D005F43BB /* UIKit.framework */; };
@@ -35,6 +37,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C4A4DC73190AE85F0082771D /* CentralManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CentralManager.h; sourceTree = "<group>"; };
+		C4A4DC74190AE85F0082771D /* CentralManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CentralManager.m; sourceTree = "<group>"; };
+		C4A4DC76190AE87C0082771D /* PeripheralManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PeripheralManager.h; sourceTree = "<group>"; };
+		C4A4DC77190AE87C0082771D /* PeripheralManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PeripheralManager.m; sourceTree = "<group>"; };
 		C4DD20FC1903443D005F43BB /* Jam Session.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Jam Session.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4DD20FF1903443D005F43BB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C4DD21011903443D005F43BB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -82,6 +88,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C4A4DC72190AE8220082771D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C4A4DC73190AE85F0082771D /* CentralManager.h */,
+				C4A4DC74190AE85F0082771D /* CentralManager.m */,
+				C4A4DC76190AE87C0082771D /* PeripheralManager.h */,
+				C4A4DC77190AE87C0082771D /* PeripheralManager.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		C4DD20F31903443C005F43BB = {
 			isa = PBXGroup;
 			children = (
@@ -116,6 +133,7 @@
 		C4DD21051903443D005F43BB /* Jam Session */ = {
 			isa = PBXGroup;
 			children = (
+				C4A4DC72190AE8220082771D /* Models */,
 				C4DD210E1903443D005F43BB /* AppDelegate.h */,
 				C4DD210F1903443D005F43BB /* AppDelegate.m */,
 				C4DD21111903443D005F43BB /* Main.storyboard */,
@@ -259,6 +277,8 @@
 				C4DD21161903443D005F43BB /* ViewController.m in Sources */,
 				C4DD21101903443D005F43BB /* AppDelegate.m in Sources */,
 				C4DD210C1903443D005F43BB /* main.m in Sources */,
+				C4A4DC78190AE87C0082771D /* PeripheralManager.m in Sources */,
+				C4A4DC75190AE85F0082771D /* CentralManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -473,6 +493,7 @@
 				C4DD21301903443D005F43BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C4DD21311903443D005F43BB /* Build configuration list for PBXNativeTarget "Jam SessionTests" */ = {
 			isa = XCConfigurationList;
@@ -481,6 +502,7 @@
 				C4DD21331903443D005F43BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
